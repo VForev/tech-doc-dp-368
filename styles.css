@@ -60,7 +60,6 @@ p {
     text-decoration: underline;
 }
 
-/* Main Content */
 #container {
     display: flex;
     margin-left: 250px;
