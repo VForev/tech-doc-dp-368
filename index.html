@@ -1,78 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Survey Form</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <nav id="navbar">
+            <header id="nav-header">Python</header>
+            <a class="nav-link" href="#Introduction_to_Python">Introduction to Python</a>
+            <a class="nav-link" href="#Python_Syntax">Python Syntax</a>
+            <a class="nav-link" href="#Python_Data_Types">Python Data Types</a>
+            <a class="nav-link" href="#Functions_in_Python">Functions in Python</a>
+            <a class="nav-link" href="#Python_Libraries">Python Libraries</a>
+        </nav>
+
         <main id="main-doc">
-            <div id="main_doc">
-                <section class="main-section" id="1_1">
-                    <header class="section-header">1_1</header>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <code></code>
-                    <code></code>
+            <div id="content">
+                <section class="main-section" id="Introduction_to_Python">
+                    <header class="section-header">Introduction to Python</header>
+                    <p>Python is a popular programming language...</p>
+                    <p>It is widely used for various applications...</p>
+                    <p>Python was created by Guido van Rossum...</p>
+                    <code>print("Hello, World!")</code>
+                    <code>python --version</code>
+                    <code>python3 -m venv myenv</code>
+                    <code>import os</code>
+                    <code>print(os.getcwd())</code>
                 </section>
 
-                <section class="main-section" id="1_2">
-                    <header class="section-header">1_2</header>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <code></code>
-                    <code></code>
-                </section>
-
-                <section class="main-section" id="1_3">
-                    <header class="section-header">1_3</header>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <code></code>
-                    <code></code>
-                </section>
-
-                <section class="main-section" id="1_4">
-                    <header class="section-header">1_4</header>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <code></code>
-                    <code></code>
+                <section class="main-section" id="Python_Syntax">
+                    <header class="section-header">Python Syntax</header>
+                    <p>Python uses indentation to define code blocks...</p>
+                    <p>Here's an example of a simple condition...</p>
+                    <code>if x > 5:</code>
+                    <code>    print("x is greater than 5")</code>
+                    <code>def greet(name):</code>
+                    <code>    return f"Hello, {name}"</code>
+                    <code>print(greet("Python"))</code>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>Indentation is required for blocks</li>
+                        <li>Use colons (:) to define conditions</li>
+                        <li>Function definition uses the 'def' keyword</li>
                     </ul>
                 </section>
 
-                <section class="main-section" id="1_5">
-                    <header class="section-header">1_5</header>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <code></code>
-                    <code></code>
+                <section class="main-section" id="Python_Data_Types">
+                    <header class="section-header">Python Data Types</header>
+                    <p>Python supports various data types...</p>
+                    <p>Common data types in Python include:</p>
+                    <code>x = 10  # Integer</code>
+                    <code>y = "Hello"  # String</code>
+                    <code>z = [1, 2, 3]  # List</code>
+                    <code>t = (4, 5, 6)  # Tuple</code>
+                    <code>d = {"name": "Python", "type": "programming"}  # Dictionary</code>
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Integer: Whole numbers</li>
+                        <li>String: Textual data</li>
+                        <li>List: Ordered collection of items</li>
+                        <li>Tuple: Immutable collection</li>
+                        <li>Dictionary: Key-value pairs</li>
                     </ul>
-                    <img width="100px" src="https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg" alt="Image">
+                </section>
+
+                <section class="main-section" id="Functions_in_Python">
+                    <header class="section-header">Functions in Python</header>
+                    <p>Functions are defined using the <code>def</code> keyword...</p>
+                    <p>Here's an example of a simple function:</p>
+                    <code>def greet(name):</code>
+                    <code>    print(f"Hello, {name}")</code>
+                    <ul>
+                        <li>Functions use the 'def' keyword</li>
+                        <li>Indentation is important in defining the body</li>
+                        <li>Functions can return values</li>
+                    </ul>
+                </section>
+
+                <section class="main-section" id="Python_Libraries">
+                    <header class="section-header">Python Libraries</header>
+                    <p>Python has a wide range of libraries...</p>
+                    <p>Libraries can be imported using the <code>import</code> keyword.</p>
+                    <code>import math</code>
+                    <code>import datetime</code>
+                    <code>import os</code>
+                    <code>import sys</code>
+                    <code>import requests</code>
+                    <ul>
+                        <li><strong>math</strong>: Provides mathematical functions</li>
+                        <li><strong>datetime</strong>: For working with dates and times</li>
+                        <li><strong>os</strong>: For interacting with the operating system</li>
+                        <li><strong>sys</strong>: Provides access to system-specific parameters</li>
+                        <li><strong>requests</strong>: For sending HTTP requests</li>
+                    </ul>
                 </section>
             </div>
-
-            <nav id="navbar">
-                <header>Navbar</header>
-                <a class="nav-link" href="#1_1">1_1</a>
-                <a class="nav-link" href="#1_2">1_2</a>
-                <a class="nav-link" href="#1_3">1_3</a>
-                <a class="nav-link" href="#1_4">1_4</a>
-                <a class="nav-link" href="#1_5">1_5</a>
-            </nav>
         </main>
-    </body>
+    </div>
+</body>
 </html>
